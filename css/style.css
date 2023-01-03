@@ -1,3 +1,60 @@
+/*Geral*/
 *{
-    max-width: 100px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
 }
+
+body{
+    background-color: #202124;
+}
+
+/*cabeçalho*/
+
+header{
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 2rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#search-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#search-input{
+    background-color: #525356;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    color: #ddd;
+    width: 400px;
+}
+
+#search-input::placeholder{
+    color: #ddd;
+}
+
+#export-notes{
+    background-color: #333;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#export-notes:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+/*form de nova nota*/
+#add-note-
