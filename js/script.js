@@ -56,6 +56,10 @@ function creatNote(id, content, fixed){
 
     element.appendChild(pinIcon)
 
+    if(fixed){
+        element.classList.add("fixed");
+    }
+
     //eventos do elemento
     element.querySelector(".bi-pin").addEventListener("click", () => {
         toggleFixNote(id)
@@ -65,7 +69,13 @@ function creatNote(id, content, fixed){
 }
 
 function toggleFixNote(id){
+    const notes = getNotes()
 
+    const targetNote = notes.filter((note) => note.id === id)[0];
+
+    targetNote.fixed = !targetNote.fixed;
+
+    saveNotes(notes);
 }
 
 //local storage
