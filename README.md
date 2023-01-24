@@ -1,1 +1,1 @@
-Fazendo o eplica do Google keep 
+Fazendo a replica do Google keep 
